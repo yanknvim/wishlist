@@ -1,0 +1,13 @@
+---
+const {title, genre, url, comment} = Astro.props;
+---
+
+<li class="rounded bg-slate-200 p-4 m-3 shadow-md">
+  <div class="flex flex-col">
+    <h2 class="text-2xl font-bold pb-2">{title}<h2>
+    <p>ジャンル: {genre}</p>
+
+    <p>URL: <a href={url} class="font-bold text-blue-400">{url}</a></p>
+    <p>備考: {comment}<p/>
+  </div>
+</li>
